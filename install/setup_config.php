@@ -30,7 +30,7 @@ $dbhost = 'localhost';
 | The name of your database that holds your tables        |
 |                                                         |
 ---------------------------------------------------------*/
-$dbname = '';
+$dbname = 'phpnukecoders_phpbb3';
 
 /*----[ $dbuname ] ---------------------------------------
 |                                                         |
@@ -38,14 +38,14 @@ $dbname = '';
 | permissions                                             |
 |                                                         |
 ---------------------------------------------------------*/
-$dbuname = '';
+$dbuname = 'phpnukecoders_db';
 
 /*----[ $dbpass ] ----------------------------------------
 |                                                         |
 | The password associated with your db usersname          |
 |                                                         |
 ---------------------------------------------------------*/
-$dbpass = '';
+$dbpass = 'xwdNPADv86nce';
 
 /*----[ $dbtype ] ----------------------------------------
 |                                                         |
