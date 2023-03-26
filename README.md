@@ -7,5 +7,5 @@
 - 😄 Pronouns: Dude
 - ⚡ Fun fact: I Live in Bogotá, Columbia and my english is not very good!
 
-I'm a recent an inductee of the CodersExchange HAll OF Fame (2023)
+I'm a recent inductee of the CodersExchange HAll OF Fame (2023)
 
