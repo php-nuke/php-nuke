@@ -1,0 +1,52 @@
+PHP-Nuke: Web Portal System
+===========================
+
+PLEASE READ CAREFULLY THE FOLLOWING INSTRUCTIONS. IF YOU DO THIS,
+YOU WILL HAVE YOUR SITE UP AND RUNNING IN JUST A FEW MINUTES.
+
+##############################################################################
+#                        I M P O R T A N T    N O T E                        #
+##############################################################################
+# IMPORTANT: I saw many sites that removes the copyright line in the footer  #
+# of each page. YOU'RE NOT ALLOWED TO REMOVE NOR CHANGE/EDIT THAT NOTE.      #
+# You can sell services based on PHP-Nuke, you can make money from it, you   #
+# can do almost whatever you want with PHP-Nuke but DO NOT REMOVE NOR EDIT   #
+# THE COPYRIGHT NOTICES!!! Removing it is a GPL license's violation.         #
+# If you do not agree with this simple rule, delete all PHP-Nuke files       #
+# rigth now and move away from it. Thanks.                                   #
+##############################################################################
+
+Base Requirements
+-----------------
+
+In order to setup PHP-Nuke the folowing prerequisits are necessary.
+
+- A Linux or Windows Box installed and working properly.
+- Apache 2.4 Web Server (http://www.apache.org)
+- PHP version 8.x.x or better (mod_php) Apache module (http://www.php.net)
+- Maria database server 10.3.3 or higer
+
+The above doesn't mean it will not work with other configurations, OS's, DB's, etc,
+but we only provide INSTALL instructions for the above configuration.
+In fact PHP-Nuke works under Windows (all), FreeBSD, OS/2, MacOS, etc.
+
+Setup of these required packages is beyond the scope of this document
+and if you are unsure you should check with each of the appropriate web
+sites for further details.
+
+Installing the Package 
+----------------------------------------------
+Unzip the package into the directory you want to use on you web
+server, if you're unsure where that is, ask you system administrator.
+Point your browser to your site, for example: http://phpnuke.org
+
+The system will show you an error message with a link to the web based installer utility (introduced
+with PHP-Nuke 8.0), follow the very easy steps and you're done.
+
+************************************************
+* PHP-Nuke URL: http://phpnuke.coders.exchange *
+************************************************
+
+Enjoy!
+-- Francisco Burzi
+
