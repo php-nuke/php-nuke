@@ -201,46 +201,6 @@ $htmltags = "<div align=\"center\"><img src=\"images/logo.gif\"><br><br><b>";
 $htmltags .= "The html tags you attempted to use is forbidden!</b><br><br>";
 $htmltags .= "[ <a href=\"javascript:history.go(-1)\"><b>Go Back</b></a> ]</div>";
 
-if (!defined('ADMIN_FILE')) {
- 
- if(!isset($_GET)){
-   $_GET = '';
- }
-
- foreach ($_GET as $sec_key => $secvalue) {
-
- if((preg_match('#<[^>]*script*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*object*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*iframe*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*applet*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*meta*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*style*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*form*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*img*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*onmouseover *"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*body *"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#\([^>]*"?[^\)]*\)#mi', $secvalue)) ||
-  (preg_match('#"#mi', $secvalue)) ||
-  (preg_match('#forum_admin#mi', $sec_key)) ||
-  (preg_match('#inside_mod#mi', $sec_key)))
-  {
-   die ($htmltags);
-  }
- foreach ($_POST as $secvalue) {
-
-  if ((preg_match('#<[^>]*iframe*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*object*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*applet*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*meta*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*onmouseover*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]script*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]*body*"?[^>]*#mi', $secvalue)) ||
-  (preg_match('#<[^>]style*"?[^>]*#mi', $secvalue))) {
-   die ($htmltags);
-   }
-  }
- }
-}
 # add 3rd party backward version comapatibility defines
 # Inspired by phoenix-cms at website-portals.net
 # Absolute Nuke directory
@@ -330,6 +290,26 @@ require_once(INCLUDE_PATH."includes/sql_layer.php");
 $dbi = sql_connect($dbhost, $dbuname, $dbpass, $dbname);
 
 require_once(INCLUDE_PATH."includes/ipban.php");
+
+
+if (!defined('ADMIN_FILE')) {
+  require_once(INCLUDE_PATH."includes/classes/class.variables.php");
+}
+
+/*
+ * functions added to support dynamic and ordered loading of CSS, PHPCSS, and JS in <HEAD> and before </BODY>
+ * Code origin Raven Nuke CMS (http://www.ravenphpscripts.com)
+ * loader addons by Ernest Buffington aka TheGhost https://theghost.86it.us
+ */
+if (file_exists(INCLUDE_PATH."includes/mods/Raven/dynamic_loader_functions.php")) {
+	include_once(INCLUDE_PATH."includes/mods/Raven/dynamic_loader_functions.php");
+}
+
+# Base: Language Selector v3.0.0 START
+if (file_exists(INCLUDE_PATH."includes/mods/Dragonfly/language.php")) {
+	include_once(INCLUDE_PATH."includes/mods/Dragonfly/language.php");
+}
+# Base: Language Selector v3.0.0 END
 
 if (file_exists(INCLUDE_PATH."includes/custom_files/custom_mainfile.php")) {
 	include_once(INCLUDE_PATH."includes/custom_files/custom_mainfile.php");
@@ -492,35 +472,6 @@ function makePass() {
 	$makepass = $con[0] . $voc[0] .$con[2] . $num1 . $num2 . $con[3] . $voc[3] . $con[4];
 
 	return($makepass);
-}
-
-function get_lang($module) {
-
-   global $currentlang, $language;
-
-   if ($module == "admin" AND $module != "Forums") {
-
-      if (file_exists("admin/language/lang-".$currentlang.".php")) {
-
-         include_secure("admin/language/lang-".$currentlang.".php");
-
-      } elseif (file_exists("admin/language/lang-".$language.".php")) {
-
-         include_secure("admin/language/lang-".$language.".php");
-
-      }
-
-   } else {
-
-      if (file_exists("modules/$module/language/lang-".$currentlang.".php")) {
-
-         include_secure("modules/$module/language/lang-".$currentlang.".php");
-
-      } elseif (file_exists("modules/$module/language/lang-".$language.".php")) {
-
-         include_secure("modules/$module/language/lang-".$language.".php");
-      }
-   }
 }
 
 function is_admin($admin) {
@@ -2697,11 +2648,8 @@ switch($gfx) {
 	$text_color = ImageColorAllocate($image, 80, 80, 80);
 
 	Header("Content-type: image/jpeg");
-
 	ImageString ($image, 5, 12, 2, $code, $text_color);
-
 	ImageJPEG($image, '', 75);
-
 	ImageDestroy($image);
 
 	die();

@@ -6,7 +6,5 @@ vendor/*
 /rector.php
 lincludes/log/*
 lincludes/cache/*
-pspbrwse.jbf
-*.pspimage
 
 
