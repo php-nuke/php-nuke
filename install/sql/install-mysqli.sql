@@ -1,3 +1,32 @@
+CREATE TABLE IF NOT EXISTS `#prefix#_cnbya_value_temp` (
+  `vid` int(10) NOT NULL,
+  `uid` int(10) NOT NULL DEFAULT 0,
+  `fid` int(10) NOT NULL DEFAULT 0,
+  `value` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `#prefix#_cnbya_value` (
+  `vid` int(10) NOT NULL,
+  `uid` int(10) NOT NULL DEFAULT 0,
+  `fid` int(10) NOT NULL DEFAULT 0,
+  `value` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `#prefix#_cnbya_field` (
+  `fid` int(10) NOT NULL,
+  `name` varchar(255) NOT NULL DEFAULT 'field',
+  `value` varchar(255) DEFAULT NULL,
+  `size` int(3) DEFAULT NULL,
+  `need` int(1) NOT NULL DEFAULT 1,
+  `pos` int(3) DEFAULT NULL,
+  `public` int(1) NOT NULL DEFAULT 1
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `#prefix#_cnbya_config` (
+  `config_name` varchar(255) NOT NULL DEFAULT '',
+  `config_value` longtext DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 CREATE TABLE IF NOT EXISTS `#prefix#_security_agents` (
   `agent_name` varchar(20) NOT NULL DEFAULT '',
   `agent_fullname` varchar(30) DEFAULT '',
@@ -258,15 +287,18 @@ CREATE TABLE IF NOT EXISTS `#prefix#_bbsearch_wordmatch` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `#prefix#_bbsessions` (
-  `session_id` char(32) NOT NULL DEFAULT '',
+  `session_id` varchar(32) NOT NULL DEFAULT '',
   `session_user_id` mediumint(8) NOT NULL DEFAULT 0,
   `session_start` int(11) NOT NULL DEFAULT 0,
   `session_time` int(11) NOT NULL DEFAULT 0,
-  `session_ip` char(8) NOT NULL DEFAULT '0',
+  `session_ip` varchar(8) NOT NULL DEFAULT '0',
   `session_page` int(11) NOT NULL DEFAULT 0,
   `session_logged_in` tinyint(1) NOT NULL DEFAULT 0,
-  `session_admin` tinyint(2) NOT NULL DEFAULT 0
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+  `session_admin` tinyint(2) NOT NULL DEFAULT 0,
+  `session_url_qs` varchar(255) NOT NULL DEFAULT '',
+  `session_url_ps` varchar(255) NOT NULL DEFAULT '',
+  `session_url_specific` int(10) NOT NULL DEFAULT 0
+  ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `#prefix#_bbsmilies` (
   `smilies_id` smallint(5) UNSIGNED NOT NULL,
@@ -938,10 +970,13 @@ CREATE TABLE IF NOT EXISTS `#prefix#_reviews_main` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `#prefix#_session` (
-  `uname` varchar(25) NOT NULL DEFAULT '',
+  `uname` varchar(255) NOT NULL DEFAULT '',
   `time` varchar(14) NOT NULL DEFAULT '',
+  `starttime` varchar(14) NOT NULL DEFAULT '',
   `host_addr` varchar(48) NOT NULL DEFAULT '',
-  `guest` int(1) NOT NULL DEFAULT 0
+  `guest` int(1) NOT NULL DEFAULT 0,
+  `module` varchar(255) NOT NULL DEFAULT '',
+  `url` varchar(255) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `#prefix#_stats_date` (
