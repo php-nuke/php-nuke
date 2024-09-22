@@ -38,6 +38,6 @@ define("_FUNCTIONS","Λειτουργίες");
 define("_USERSFOUND","ενεργοί χρήστες για");
 define("_USERSSHOWN","εμφανιζόμενοι χρήστες");
 define("_NOMEMBERS","Δεν βρέθηκαν μέλη για");
-A-# define("_HOMEPAGE","Κεντρική Σελίδα ");
+// A-# define("_HOMEPAGE","Κεντρική Σελίδα ");
 
 ?>

@@ -37,7 +37,7 @@ define("_READREST","Baca seluruh komentar ini...");
 define("_REPLY","Tanggapi");
 define("_REPLYMAIN","Kirim Komentar");
 define("_NOSUBJECT","Tanpa Subjek");
-define("_NOANONCOMMENTS","Anda tidak dibolehkan mengirim komentar, silakan daftar <a href=\"modules.php?name=Your_Account&">di sini</a>");
+define("_NOANONCOMMENTS","Anda tidak dibolehkan mengirim komentar, silakan daftar <a href=\"modules.php?name=Your_Account\">di sini</a>");
 define("_PARENT","Setingkat ke atas");
 define("_ROOT","Awal");
 define("_UCOMMENT","Komentar");

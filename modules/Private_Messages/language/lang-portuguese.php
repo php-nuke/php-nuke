@@ -77,7 +77,7 @@ define("_BBBANNED","Banido");
 define("_CLICKSMILEBUTTONS","Clique nos smilies para os inserir na sua mensagem:");
 define("_CLICKCODEBUTTONS","Clique nos botões seguintes para inserir BBCode na sua mensagem:");
 define("_PRIVMSGERROR","Erro na mensagem privada!");
-define("_USERDOESNTEXIST","Desculpe, mas o utilizador seleccionado não existe no nosso web site")
+define("_USERDOESNTEXIST","Desculpe, mas o utilizador seleccionado não existe no nosso web site");
 define("_DELETESELECTED","Apague o seleccionado");
 define("_SENDNEWMSG","Enviar nova mensagem");
 define("_REPLY","Responder");

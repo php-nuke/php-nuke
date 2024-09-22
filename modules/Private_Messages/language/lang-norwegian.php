@@ -70,7 +70,7 @@ define("_BBBANNED","Bannet");
 define("_CLICKSMILEBUTTONS","Trykk på Smilien for å sette den inn i beskjeden:");
 define("_CLICKCODEBUTTONS","Trykk på de følgende knappene for å legge til BBCode i beskjeden:");
 define("_PRIVMSGERROR","Feilmelding!");
-define("_USERDOESNTEXIST","Den valgte brukeren eksisterer ikke i vår database")
+define("_USERDOESNTEXIST","Den valgte brukeren eksisterer ikke i vår database");
 define("_DELETESELECTED","Slett valgte");
 define("_SENDNEWMSG","Send ny beskjed");
 define("_REPLY","Svar");

@@ -70,7 +70,7 @@ define("_BBBANNED","Banned");
 define("_CLICKSMILEBUTTONS","Nh&#7845;n vào nh&#7919;ng Smilies bên d&#432;&#7899;i &#273;&#7875; chèn chúng vào tin nh&#7855;n c&#7911;a b&#7841;n:");
 define("_CLICKCODEBUTTONS","Nh&#7845;n vào nh&#7919;ng bi&#7875;u t&#432;&#7907;ng bên d&#432;&#7899;i &#273;&#7875; thêm BBCode vào tin nh&#7855;n c&#7911;a b&#7841;n:");
 define("_PRIVMSGERROR","Private Message Error!");
-define("_USERDOESNTEXIST","Xin l&#7895;i, thành viên &#273;ang ch&#7885;n không có trông c&#417; s&#7903; d&#7919; li&#7879;u")
+define("_USERDOESNTEXIST","Xin l&#7895;i, thành viên &#273;ang ch&#7885;n không có trông c&#417; s&#7903; d&#7919; li&#7879;u");
 define("_DELETESELECTED","Xoá cái &#273;ang ch&#7885;n");
 define("_SENDNEWMSG","G&#7903;i tin m&#7899;i");
 define("_REPLY","Tr&#7843; l&#7901;i");

@@ -75,7 +75,7 @@ define("_BBBANNED","Banido");
 define("_CLICKSMILEBUTTONS","Clique nos smilies (carinhas) para inserí-lo em sua mensagem:");
 define("_CLICKCODEBUTTONS","Clique nos seguintes botões para adicionar CódigoBB emsua mensagem:");
 define("_PRIVMSGERROR","Erro na Mensagem Privada!");
-define("_USERDOESNTEXIST","Desculpe, o usuário selecionado não existe no Banco de Dados")
+define("_USERDOESNTEXIST","Desculpe, o usuário selecionado não existe no Banco de Dados");
 define("_DELETESELECTED","Apagar mensagens selecionadas");
 define("_SENDNEWMSG","Enviar uma nova mensagem");
 define("_REPLY","Responder");

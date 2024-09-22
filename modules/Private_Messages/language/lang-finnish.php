@@ -70,7 +70,7 @@ define("_BBBANNED","Banned");
 define("_CLICKSMILEBUTTONS","Click on the Smilies to insert it on your Message:");
 define("_CLICKCODEBUTTONS","Click on the following buttons to add BBCode to your Message:");
 define("_PRIVMSGERROR","Private Message Error!");
-define("_USERDOESNTEXIST","Sorry, the selected user doesn't exist in our database")
+define("_USERDOESNTEXIST","Sorry, the selected user doesn't exist in our database");
 define("_DELETESELECTED","Delete Selected");
 define("_SENDNEWMSG","Send New Message");
 define("_REPLY","Reply");

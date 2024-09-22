@@ -175,8 +175,8 @@ define_once("_COMPLETEVOTE3","Vote for a resource only once.<br>All votes are lo
 define_once("_COMPLETEVOTE4","You cannot vote on a link you submitted.<br>All votes are logged and reviewed.");
 define_once("_COMPLETEVOTE5","No rating selected - no vote tallied");
 define_once("_COMPLETEVOTE6","Only one vote per IP address allowed every $outsidewaitdays day(s).");
-A-# define_once("_FILESIZE","Μέγεθος αρχείου");
-A-# define_once("_VERSION","Έκδοση");
-K-# define_once("_UDOWNLOADS","Ανακτήσεις");
-A-# define_once("_HOMEPAGE","Κεντρική Σελίδα ");
+// A-# define_once("_FILESIZE","Μέγεθος αρχείου");
+// A-# define_once("_VERSION","Έκδοση");
+// K-# define_once("_UDOWNLOADS","Ανακτήσεις");
+// A-# define_once("_HOMEPAGE","Κεντρική Σελίδα ");
 

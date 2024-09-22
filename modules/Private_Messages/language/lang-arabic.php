@@ -70,7 +70,7 @@ define("_BBBANNED","ãæÞæÝ");
 define("_CLICKSMILEBUTTONS","ÇÖÛØ Úáì ÇáÅÈÊÓÇãÇÊ áÅÖÇÝÊåÇ Çáì ãæÖæÚß:");
 define("_CLICKCODEBUTTONS","ÇÖÛØ Úáì ÇáÃÒÑÇÑ ÇáÊÇáíÉ áÅÖÇÝÉ ßæÏ ÇáÈí Èí Çáì ãæÖæÚß:");
 define("_PRIVMSGERROR","ÎØÃ Ýí ÇáÑÓÇáÉ ÇáÎÇÕÉ!");
-define("_USERDOESNTEXIST","åÐÇ ÇáÚÖæ ÛíÑ ãæÌæÏ áÏíäÇ")
+define("_USERDOESNTEXIST","åÐÇ ÇáÚÖæ ÛíÑ ãæÌæÏ áÏíäÇ");
 define("_DELETESELECTED","ÍÐÝ ÇáÃÎÊíÇÑ");
 define("_SENDNEWMSG","ÃÑÓá ÑÓÇáÉ ÌÏíÏÉ");
 define("_REPLY","ÇÖÇÝÉ ÑÏ");

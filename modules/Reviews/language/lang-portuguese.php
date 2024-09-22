@@ -86,7 +86,7 @@ define_once("_TOTALREVIEWS","Total de revisões encontradas.");
 define_once("_RETURN2MAIN","Voltar ao menu principal");
 define_once("_REVIEWCOMMENT","Faça um comentário sobre a revisão:");
 define_once("_YOURNICK","O seu nome:");
-define_once("_RCREATEACCOUNT","<a href="modules.php?name=Your_Account&op=new_user\"><b>Crie</b></a> uma conta");
+define_once("_RCREATEACCOUNT","<a href=\"modules.php?name=Your_Account&op=new_user\"><b>Crie</b></a> uma conta");
 define_once("_YOURCOMMENT","O seu comentário:");
 define_once("_MYSCORE","A minha pontuação (1 a 10):");
 define_once("_REVIEWMOD","Revisão modificada");

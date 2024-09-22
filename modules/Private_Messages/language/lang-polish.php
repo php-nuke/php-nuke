@@ -73,7 +73,7 @@ define("_BBBANNED","Zbanowany");
 define("_CLICKSMILEBUTTONS","Kliknij na bu¼ki by wstawiæ je do wiadomo¶ci:");
 define("_CLICKCODEBUTTONS","Kliknij na wybrany przycisk by dodaæ BBCode do Twojej wiadomo¶ci:");
 define("_PRIVMSGERROR","B³±d!");
-define("_USERDOESNTEXIST","Sorry, Wybrany u¿ytkownik nie istnieje w bazie.")
+define("_USERDOESNTEXIST","Sorry, Wybrany u¿ytkownik nie istnieje w bazie.");
 define("_DELETESELECTED","Usuñ zaznaczone");
 define("_SENDNEWMSG","Wy¶lij now± wiadomo¶æ");
 define("_REPLY","Odpowiedz");

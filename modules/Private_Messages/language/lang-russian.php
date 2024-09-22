@@ -80,7 +80,7 @@ define("_BBBANNED","Запрещенное");
 define("_CLICKSMILEBUTTONS","Кликните на смайлик для вставки его в сообщение:");
 define("_CLICKCODEBUTTONS","Кликните на эту кнопку для добавления BBCodа в Ваше сообщение:");
 define("_PRIVMSGERROR","Ошибка в частном сообщении!");
-define("_USERDOESNTEXIST","Извините, выбранный пользователь отсутствует в базе данных")
+define("_USERDOESNTEXIST","Извините, выбранный пользователь отсутствует в базе данных");
 define("_DELETESELECTED","Удалить выбранные");
 define("_SENDNEWMSG","Отправить новое сообщение");
 define("_REPLY","Ответить");

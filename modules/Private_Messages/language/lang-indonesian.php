@@ -70,7 +70,7 @@ define("_BBBANNED","Di-blok");
 define("_CLICKSMILEBUTTONS","Klik pada gambar untuk dimasukkan pada pesan anda:");
 define("_CLICKCODEBUTTONS","Klik pada tombol di bawah untuk memasukkan BBCode pada pesan anda:");
 define("_PRIVMSGERROR","Pesan Pribadi Error!");
-define("_USERDOESNTEXIST","Maaf, User yang anda tuju tidak ada dalam database")
+define("_USERDOESNTEXIST","Maaf, User yang anda tuju tidak ada dalam database");
 define("_DELETESELECTED","Hapus yang dipilih");
 define("_SENDNEWMSG","Kirim Pesan baru");
 define("_REPLY","Repli");

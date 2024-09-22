@@ -68,7 +68,7 @@ define("_BBBANNED","De har ikke lov til at komme ind, desværre...");
 define("_CLICKSMILEBUTTONS","Klik på et smilie for at sætte det ind i Deres meddelse:");
 define("_CLICKCODEBUTTONS","Klik på en af de følgende klapper for at sætte BBCode ind i deres meddelse:");
 define("_PRIVMSGERROR","Privat meddelse fejl!");
-define("_USERDOESNTEXIST","Desværre, den valgte bruger eksisterer ikke i vores database")
+define("_USERDOESNTEXIST","Desværre, den valgte bruger eksisterer ikke i vores database");
 define("_DELETESELECTED","Slet valgte");
 define("_SENDNEWMSG","Send ny meddelse");
 define("_REPLY","Svar");

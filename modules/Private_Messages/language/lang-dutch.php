@@ -70,7 +70,7 @@ define("_BBBANNED","Uitgesloten");
 define("_CLICKSMILEBUTTONS","Klik op de Smilies om ze in je Bericht in te voegen:");
 define("_CLICKCODEBUTTONS","Klik op de volgende knoppen om BBCode aan je Bericht toe te voegen:");
 define("_PRIVMSGERROR","Privé Bericht Foutmelding!");
-define("_USERDOESNTEXIST","Sorry, de gekozen gebruiker bestaat niet in onze databank")
+define("_USERDOESNTEXIST","Sorry, de gekozen gebruiker bestaat niet in onze databank");
 define("_DELETESELECTED","Geselecteerde verwijderd");
 define("_SENDNEWMSG","Zend Nieuw Bericht");
 define("_REPLY","Antwoord");

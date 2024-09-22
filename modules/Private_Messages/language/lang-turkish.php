@@ -70,7 +70,7 @@ define("_BBBANNED","Yasaklandý");
 define("_CLICKSMILEBUTTONS","Mesajýnýza eklemek istediðiniz smiley'e týklayýn:");
 define("_CLICKCODEBUTTONS","Mesajýnýza eklemek istediðiniz BBCode'a týklayýn:");
 define("_PRIVMSGERROR","Özel Mesaj Hatasý!");
-define("_USERDOESNTEXIST","Üzgünüm, seçilen kullanýcý veritabanýmýzda bulunmuyor")
+define("_USERDOESNTEXIST","Üzgünüm, seçilen kullanýcý veritabanýmýzda bulunmuyor");
 define("_DELETESELECTED","Seçileni Sil");
 define("_SENDNEWMSG","Yeni Mesaj Gönder");
 define("_REPLY","Yanýtla");

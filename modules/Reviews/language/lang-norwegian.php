@@ -49,7 +49,7 @@ define_once("_RIMAGEFILEREQ","Navnet på billedfilen til produktet. Skal ligge i 
 define_once("_CHECKINFO","Vær sikker på at informasjonen du har angitt er riktig og du bruker riktig grammatikk og tegnsetting.");
 define_once("_INVALIDTITLE","Feil i tittel... Feltet kan ikke være tomt");
 define_once("_INVALIDSCORE","Feil i karakter... Må være mellom 1 og 10");
-define_once("_INVALIDTEXT","Feil i anmeldelsestekst... Feltet kan ikke være tomt\");
+define_once("_INVALIDTEXT","Feil i anmeldelsestekst... Feltet kan ikke være tomt");
 define_once("_INVALIDHITS","Treff må være en positiv integer");
 define_once("_CHECKNAME","Du må oppgi både ditt navn og din e-postadresse");
 define_once("_INVALIDEMAIL","Ugyldig e-postadresse. Må være på formen navn@adresse.no");
